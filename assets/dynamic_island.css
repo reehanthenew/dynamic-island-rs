@@ -1,0 +1,48 @@
+#dynamic-island {
+    background: rgba(18, 18, 20, 0.88);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 999px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.42);
+    padding: 0px;
+    transition-property: min-width, min-height, border-radius, opacity;
+    transition-duration: 200ms;
+    transition-timing-function: ease-out;
+}
+
+#dynamic-island.minimal {
+    min-width: 160px;
+    min-height: 52px;
+}
+
+#dynamic-island.compact {
+    min-width: 240px;
+    min-height: 62px;
+}
+
+#dynamic-island.expanded {
+    min-width: 340px;
+    min-height: 120px;
+    border-radius: 26px;
+}
+
+#dynamic-island label {
+    color: rgba(255, 255, 255, 0.96);
+}
+
+#dynamic-island .title {
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+#dynamic-island .body {
+    font-size: 13px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.96);
+}
+
+window {
+    background: transparent;
+}

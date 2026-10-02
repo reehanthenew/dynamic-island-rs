@@ -1,0 +1,16 @@
+[package]
+name = "dynamic-island-rs"
+version = "0.1.0"
+edition = "2021"
+description = "A Dynamic Island style notification bar built with GTK4 in Rust"
+license = "MIT"
+repository = "https://github.com/reehanthenew/dynamic-island-rs"
+
+[dependencies]
+gtk = { package = "gtk4", version = "0.9", features = ["v4_12"] }
+anyhow = "1.0"
+
+[profile.release]
+lto = true
+codegen-units = 1
+opt-level = "z"
